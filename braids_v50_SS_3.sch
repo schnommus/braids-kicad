@@ -1,0 +1,1053 @@
+EESchema Schematic File Version 2
+LIBS:braids_v50
+LIBS:braids_v50-cache
+EELAYER 25 0
+EELAYER END
+$Descr A2 23386 16535
+encoding utf-8
+Sheet 4 4
+Title "braids_v50.sch"
+Date "24 JUL 2017"
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text Notes 14950 7000 0    70   ~ 0
+3.5mA
+Text Notes 13550 7000 0    70   ~ 0
+200~A
+Text Notes 15950 11300 0    100  ~ 0
+cc-by-sa
+Text Notes 15950 11500 0    100  ~ 0
+Olivier Gillet
+Text Notes 15950 11700 0    100  ~ 0
+ol.gillet@gmail.com
+Text Notes 18150 11300 0    100  ~ 0
+Analog Section
+$Comp
+L SUPPLY1_+3V3 #+3V063
+U 1 1 597509A1
+P 11250 6800
+F 0 "#+3V063" V 11150 6600 70  0001 L BNN
+F 1 "+3V3" V 11150 6600 70  0000 L BNN
+F 2 "" H 11250 6800 60  0001 C CNN
+F 3 "" H 11250 6800 60  0001 C CNN
+	1    11250 6800
+	1    0    0    -1  
+$EndComp
+$Comp
+L SUPPLY1_+3V3 #+3V064
+U 1 1 59750A05
+P 12350 6400
+F 0 "#+3V064" V 12250 6200 70  0001 L BNN
+F 1 "+3V3" V 12250 6200 70  0000 L BNN
+F 2 "" H 12350 6400 60  0001 C CNN
+F 3 "" H 12350 6400 60  0001 C CNN
+	1    12350 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-USC0603 C4
+U 1 1 59750ACD
+P 11250 7200
+F 0 "C4" H 11290 7224 70  0000 L BNN
+F 1 "100n" H 11289 7035 70  0000 L BNN
+F 2 "braids_v50:RCL_C0603" H 11240 6990 65  0001 L TNN
+F 3 "" H 11250 7200 60  0001 C CNN
+	1    11250 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-USC0603 C8
+U 1 1 59750B95
+P 13050 7300
+F 0 "C8" H 13090 7324 70  0000 L BNN
+F 1 "470n" H 13089 7135 70  0000 L BNN
+F 2 "braids_v50:RCL_C0603" H 13040 7090 65  0001 L TNN
+F 3 "" H 13050 7300 60  0001 C CNN
+	1    13050 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_CPOL-USC C15
+U 1 1 59750C5D
+P 10850 7200
+F 0 "C15" H 10890 7224 70  0000 L BNN
+F 1 "22u" H 10889 7035 70  0000 L BNN
+F 2 "braids_v50:RCL_PANASONIC_C" H 10840 6990 65  0001 L TNN
+F 3 "" H 10850 7200 60  0001 C CNN
+	1    10850 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_CPOL-USC C19
+U 1 1 59750D25
+P 9650 7200
+F 0 "C19" H 9690 7224 70  0000 L BNN
+F 1 "22u" H 9689 7035 70  0000 L BNN
+F 2 "braids_v50:RCL_PANASONIC_C" H 9640 6990 65  0001 L TNN
+F 3 "" H 9650 7200 60  0001 C CNN
+	1    9650 7200
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_CPOL-USD C25
+U 1 1 59750DED
+P 11450 3500
+F 0 "C25" H 11490 3524 70  0000 L BNN
+F 1 "47u" H 11489 3335 70  0000 L BNN
+F 2 "braids_v50:RCL_PANASONIC_D" H 11440 3290 65  0001 L TNN
+F 3 "" H 11450 3500 60  0001 C CNN
+	1    11450 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_C-USC0603 C26
+U 1 1 59750EB5
+P 14850 7300
+F 0 "C26" H 14890 7324 70  0000 L BNN
+F 1 "100n" H 14889 7135 70  0000 L BNN
+F 2 "braids_v50:RCL_C0603" H 14840 7090 65  0001 L TNN
+F 3 "" H 14850 7300 60  0001 C CNN
+	1    14850 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_CPOL-USD C30
+U 1 1 59750F7D
+P 11450 4000
+F 0 "C30" H 11490 4024 70  0000 L BNN
+F 1 "47u" H 11489 3835 70  0000 L BNN
+F 2 "braids_v50:RCL_PANASONIC_D" H 11440 3790 65  0001 L TNN
+F 3 "" H 11450 4000 60  0001 C CNN
+	1    11450 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L DIODE_DIODE-SOD123 D1
+U 1 1 59751045
+P 9050 3700
+F 0 "D1" H 9050 3581 70  0000 R TNN
+F 1 "1N5819HW" H 9040 3590 65  0001 L TNN
+F 2 "braids_v50:DIODE_SOD123" H 9040 3490 65  0001 L TNN
+F 3 "" H 9050 3700 60  0001 C CNN
+	1    9050 3700
+	-1   0    0    1   
+$EndComp
+$Comp
+L DIODE_DIODE-SOD123 D2
+U 1 1 5975110D
+P 9050 4100
+F 0 "D2" H 9050 3981 70  0000 R TNN
+F 1 "1N5819HW" H 9040 3990 65  0001 L TNN
+F 2 "braids_v50:DIODE_SOD123" H 9040 3890 65  0001 L TNN
+F 3 "" H 9050 4100 60  0001 C CNN
+	1    9050 4100
+	1    0    0    -1  
+$EndComp
+$Comp
+L FRAMES_A3L-LOC #FRAME2
+U 1 1 59751171
+P 4550 12100
+F 0 "#FRAME2" H 4600 12150 100 0001 L BNN
+F 1 "Sheet:" H 18090 12294 100 0000 L BNN
+F 2 "" H 4550 12100 60  0001 C CNN
+F 3 "" H 4550 12100 60  0001 C CNN
+	1    4550 12100
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND065
+U 1 1 597511D5
+P 10250 4200
+F 0 "#GND065" H 10150 4100 70  0001 L BNN
+F 1 "GND" H 10150 4100 70  0000 L BNN
+F 2 "" H 10250 4200 60  0001 C CNN
+F 3 "" H 10250 4200 60  0001 C CNN
+	1    10250 4200
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND066
+U 1 1 59751239
+P 11050 4000
+F 0 "#GND066" H 10950 3900 70  0001 L BNN
+F 1 "GND" H 10950 3900 70  0000 L BNN
+F 2 "" H 11050 4000 60  0001 C CNN
+F 3 "" H 11050 4000 60  0001 C CNN
+	1    11050 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND067
+U 1 1 5975129D
+P 10250 7700
+F 0 "#GND067" H 10150 7600 70  0001 L BNN
+F 1 "GND" H 10150 7600 70  0000 L BNN
+F 2 "" H 10250 7700 60  0001 C CNN
+F 3 "" H 10250 7700 60  0001 C CNN
+	1    10250 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND068
+U 1 1 59751301
+P 10850 7700
+F 0 "#GND068" H 10750 7600 70  0001 L BNN
+F 1 "GND" H 10750 7600 70  0000 L BNN
+F 2 "" H 10850 7700 60  0001 C CNN
+F 3 "" H 10850 7700 60  0001 C CNN
+	1    10850 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND069
+U 1 1 59751365
+P 11250 7700
+F 0 "#GND069" H 11150 7600 70  0001 L BNN
+F 1 "GND" H 11150 7600 70  0000 L BNN
+F 2 "" H 11250 7700 60  0001 C CNN
+F 3 "" H 11250 7700 60  0001 C CNN
+	1    11250 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND070
+U 1 1 597513C9
+P 12350 7700
+F 0 "#GND070" H 12250 7600 70  0001 L BNN
+F 1 "GND" H 12250 7600 70  0000 L BNN
+F 2 "" H 12350 7700 60  0001 C CNN
+F 3 "" H 12350 7700 60  0001 C CNN
+	1    12350 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND071
+U 1 1 5975142D
+P 13050 7700
+F 0 "#GND071" H 12950 7600 70  0001 L BNN
+F 1 "GND" H 12950 7600 70  0000 L BNN
+F 2 "" H 13050 7700 60  0001 C CNN
+F 3 "" H 13050 7700 60  0001 C CNN
+	1    13050 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND072
+U 1 1 59751491
+P 9650 7700
+F 0 "#GND072" H 9550 7600 70  0001 L BNN
+F 1 "GND" H 9550 7600 70  0000 L BNN
+F 2 "" H 9650 7700 60  0001 C CNN
+F 3 "" H 9650 7700 60  0001 C CNN
+	1    9650 7700
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_GND #GND073
+U 1 1 597514F5
+P 14650 7800
+F 0 "#GND073" H 14550 7700 70  0001 L BNN
+F 1 "GND" H 14550 7700 70  0000 L BNN
+F 2 "" H 14650 7800 60  0001 C CNN
+F 3 "" H 14650 7800 60  0001 C CNN
+	1    14650 7800
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEXAS_LM4041B12DBZ IC3
+U 1 1 597515BD
+P 12350 7400
+F 0 "IC3" H 12460 7475 70  0000 L BNN
+F 1 "LM4040B25" H 12460 7365 70  0000 L BNN
+F 2 "braids_v50:TEXAS_DBZ_R-PDSO-G3" H 12340 7190 65  0001 L TNN
+F 3 "" H 12350 7400 60  0001 C CNN
+	1    12350 7400
+	1    0    0    -1  
+$EndComp
+$Comp
+L OG-VREG_REG1117T IC6
+U 1 1 59751685
+P 10250 7000
+F 0 "IC6" H 9950 7225 70  0000 L BNN
+F 1 "LM1117-3.3" H 10050 7100 70  0000 L BNN
+F 2 "braids_v50:OG-VREG_TO252" H 10240 6790 65  0001 L TNN
+F 3 "" H 10250 7000 60  0001 C CNN
+	1    10250 7000
+	1    0    0    -1  
+$EndComp
+$Comp
+L TEXAS_LM4041B12DBZ IC8
+U 1 1 5975174D
+P 14650 7400
+F 0 "IC8" H 14760 7475 70  0000 L BNN
+F 1 "LM4040B10" H 14760 7366 70  0000 L BNN
+F 2 "braids_v50:TEXAS_DBZ_R-PDSO-G3" H 14640 7190 65  0001 L TNN
+F 3 "" H 14650 7400 60  0001 C CNN
+	1    14650 7400
+	-1   0    0    1   
+$EndComp
+$Comp
+L OG-HEADER_M05X2PTH JP1
+U 1 1 59751815
+P 9550 3900
+F 0 "JP1" H 9451 4230 70  0000 L BNN
+F 1 "M05X2PTH" H 9450 3500 70  0000 L BNN
+F 2 "braids_v50:OG-HEADER_AVR_ICSP" H 9540 3690 65  0001 L TNN
+F 3 "" H 9550 3900 60  0001 C CNN
+	1    9550 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_VCC #P+074
+U 1 1 59751879
+P 8750 3600
+F 0 "#P+074" H 8711 3740 70  0001 L BNN
+F 1 "VCC" H 8711 3740 70  0000 L BNN
+F 2 "" H 8750 3600 60  0001 C CNN
+F 3 "" H 8750 3600 60  0001 C CNN
+	1    8750 3600
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_VCC #P+075
+U 1 1 597518DD
+P 11450 3300
+F 0 "#P+075" H 11411 3440 70  0001 L BNN
+F 1 "VCC" H 11411 3440 70  0000 L BNN
+F 2 "" H 11450 3300 60  0001 C CNN
+F 3 "" H 11450 3300 60  0001 C CNN
+	1    11450 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L SPARKFUN_VCC #P+076
+U 1 1 59751941
+P 9650 6400
+F 0 "#P+076" H 9611 6540 70  0001 L BNN
+F 1 "VCC" H 9611 6540 70  0000 L BNN
+F 2 "" H 9650 6400 60  0001 C CNN
+F 3 "" H 9650 6400 60  0001 C CNN
+	1    9650 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L RCL_R-US_R0603 R23
+U 1 1 59751A09
+P 12350 6800
+F 0 "R23" H 12200 6858 70  0000 L BNN
+F 1 "1.0k" H 12201 6670 70  0000 L BNN
+F 2 "braids_v50:RCL_R0603" H 12340 6590 65  0001 L TNN
+F 3 "" H 12350 6800 60  0001 C CNN
+	1    12350 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L RCL_R-US_R1206 R49
+U 1 1 59751AD1
+P 9650 6700
+F 0 "R49" H 9500 6759 70  0000 L BNN
+F 1 "4.7" H 9500 6570 70  0000 L BNN
+F 2 "braids_v50:RCL_R1206" H 9640 6490 65  0001 L TNN
+F 3 "" H 9650 6700 60  0001 C CNN
+	1    9650 6700
+	0    -1   -1   0   
+$EndComp
+$Comp
+L RCL_R-US_R0603 R51
+U 1 1 59751B99
+P 14650 6800
+F 0 "R51" H 14500 6858 70  0000 L BNN
+F 1 "330" H 14501 6670 70  0000 L BNN
+F 2 "braids_v50:RCL_R0603" H 14640 6590 65  0001 L TNN
+F 3 "" H 14650 6800 60  0001 C CNN
+	1    14650 6800
+	0    1    1    0   
+$EndComp
+$Comp
+L SUPPLY2_VEE #SUPPLY077
+U 1 1 59751BFD
+P 8750 4300
+F 0 "#SUPPLY077" H 8675 4425 70  0001 L BNN
+F 1 "VEE" H 8675 4425 70  0000 L BNN
+F 2 "" H 8750 4300 60  0001 C CNN
+F 3 "" H 8750 4300 60  0001 C CNN
+	1    8750 4300
+	-1   0    0    1   
+$EndComp
+$Comp
+L SUPPLY2_VEE #SUPPLY078
+U 1 1 59751C61
+P 11450 4400
+F 0 "#SUPPLY078" H 11375 4525 70  0001 L BNN
+F 1 "VEE" H 11375 4525 70  0000 L BNN
+F 2 "" H 11450 4400 60  0001 C CNN
+F 3 "" H 11450 4400 60  0001 C CNN
+	1    11450 4400
+	-1   0    0    1   
+$EndComp
+$Comp
+L SUPPLY2_VEE #SUPPLY079
+U 1 1 59751CC5
+P 14650 6400
+F 0 "#SUPPLY079" H 14576 6525 70  0001 L BNN
+F 1 "VEE" H 14576 6525 70  0000 L BNN
+F 2 "" H 14650 6400 60  0001 C CNN
+F 3 "" H 14650 6400 60  0001 C CNN
+	1    14650 6400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10750 7000 11250 7000
+Wire Wire Line
+	10850 7100 10850 7000
+Wire Wire Line
+	11250 6900 11250 7100
+Connection ~ 10850 7000
+Connection ~ 11250 7000
+Wire Wire Line
+	12350 6500 12350 6600
+Wire Wire Line
+	12350 7000 12350 7300
+Wire Wire Line
+	13050 7200 13050 7100
+Wire Wire Line
+	12350 7100 13550 7100
+Connection ~ 12350 7100
+Connection ~ 13050 7100
+Text Label 13550 7100 0    65   ~ 0
+AREF
+Wire Wire Line
+	14850 7100 14850 7200
+Wire Wire Line
+	14650 7100 14950 7100
+Wire Wire Line
+	14650 7000 14650 7300
+Connection ~ 14850 7100
+Connection ~ 14650 7100
+Text Label 14950 7100 0    65   ~ 0
+AREF_-10
+Wire Wire Line
+	9950 4000 9950 3800
+Wire Wire Line
+	9950 3800 9250 3800
+Wire Wire Line
+	9250 3900 9950 3900
+Wire Wire Line
+	9250 4000 10250 4000
+Wire Wire Line
+	10250 4000 10250 4100
+Connection ~ 9950 3900
+Connection ~ 9950 4000
+Connection ~ 9850 4000
+Connection ~ 9850 3900
+Connection ~ 9850 3800
+Connection ~ 9250 3800
+Connection ~ 9250 3900
+Connection ~ 9250 4000
+Wire Wire Line
+	10250 7500 10250 7600
+Wire Wire Line
+	10850 7400 10850 7600
+Wire Wire Line
+	11250 7400 11250 7600
+Wire Wire Line
+	11450 3700 11450 3900
+Wire Wire Line
+	11450 3800 11050 3800
+Wire Wire Line
+	11050 3800 11050 3900
+Connection ~ 11450 3800
+Wire Wire Line
+	12350 7500 12350 7600
+Wire Wire Line
+	13050 7500 13050 7600
+Wire Wire Line
+	9650 7400 9650 7600
+Wire Wire Line
+	14850 7500 14850 7600
+Wire Wire Line
+	14850 7600 14650 7600
+Wire Wire Line
+	14650 7500 14650 7700
+Connection ~ 14650 7600
+Wire Wire Line
+	2017 2638 1917 2638
+Text Label 1917 2638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 2738 1917 2738
+Text Label 1917 2738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 2838 1917 2838
+Text Label 1917 2838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 2938 1917 2938
+Text Label 1917 2938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3038 1917 3038
+Text Label 1917 3038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3138 1917 3138
+Text Label 1917 3138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3238 1917 3238
+Text Label 1917 3238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3338 1917 3338
+Text Label 1917 3338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3438 1917 3438
+Text Label 1917 3438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3538 1917 3538
+Text Label 1917 3538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3638 1917 3638
+Text Label 1917 3638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3738 1917 3738
+Text Label 1917 3738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3838 1917 3838
+Text Label 1917 3838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 3938 1917 3938
+Text Label 1917 3938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4038 1917 4038
+Text Label 1917 4038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4138 1917 4138
+Text Label 1917 4138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4238 1917 4238
+Text Label 1917 4238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4338 1917 4338
+Text Label 1917 4338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4438 1917 4438
+Text Label 1917 4438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4538 1917 4538
+Text Label 1917 4538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4638 1917 4638
+Text Label 1917 4638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4738 1917 4738
+Text Label 1917 4738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4838 1917 4838
+Text Label 1917 4838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 4938 1917 4938
+Text Label 1917 4938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5038 1917 5038
+Text Label 1917 5038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5138 1917 5138
+Text Label 1917 5138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5238 1917 5238
+Text Label 1917 5238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5338 1917 5338
+Text Label 1917 5338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5438 1917 5438
+Text Label 1917 5438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5538 1917 5538
+Text Label 1917 5538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5638 1917 5638
+Text Label 1917 5638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5738 1917 5738
+Text Label 1917 5738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5838 1917 5838
+Text Label 1917 5838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 5938 1917 5938
+Text Label 1917 5938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6038 1917 6038
+Text Label 1917 6038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6138 1917 6138
+Text Label 1917 6138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6238 1917 6238
+Text Label 1917 6238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6338 1917 6338
+Text Label 1917 6338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6438 1917 6438
+Text Label 1917 6438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6538 1917 6538
+Text Label 1917 6538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6638 1917 6638
+Text Label 1917 6638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6738 1917 6738
+Text Label 1917 6738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6838 1917 6838
+Text Label 1917 6838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 6938 1917 6938
+Text Label 1917 6938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7038 1917 7038
+Text Label 1917 7038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7138 1917 7138
+Text Label 1917 7138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7238 1917 7238
+Text Label 1917 7238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7338 1917 7338
+Text Label 1917 7338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7438 1917 7438
+Text Label 1917 7438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7538 1917 7538
+Text Label 1917 7538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7638 1917 7638
+Text Label 1917 7638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7738 1917 7738
+Text Label 1917 7738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7838 1917 7838
+Text Label 1917 7838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 7938 1917 7938
+Text Label 1917 7938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8038 1917 8038
+Text Label 1917 8038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8138 1917 8138
+Text Label 1917 8138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8238 1917 8238
+Text Label 1917 8238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8338 1917 8338
+Text Label 1917 8338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8438 1917 8438
+Text Label 1917 8438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8538 1917 8538
+Text Label 1917 8538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8638 1917 8638
+Text Label 1917 8638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8738 1917 8738
+Text Label 1917 8738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8838 1917 8838
+Text Label 1917 8838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 8938 1917 8938
+Text Label 1917 8938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9038 1917 9038
+Text Label 1917 9038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9138 1917 9138
+Text Label 1917 9138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9238 1917 9238
+Text Label 1917 9238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9338 1917 9338
+Text Label 1917 9338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9438 1917 9438
+Text Label 1917 9438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9538 1917 9538
+Text Label 1917 9538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9638 1917 9638
+Text Label 1917 9638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9738 1917 9738
+Text Label 1917 9738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9838 1917 9838
+Text Label 1917 9838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 9938 1917 9938
+Text Label 1917 9938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10038 1917 10038
+Text Label 1917 10038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10138 1917 10138
+Text Label 1917 10138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10238 1917 10238
+Text Label 1917 10238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10338 1917 10338
+Text Label 1917 10338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10438 1917 10438
+Text Label 1917 10438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10538 1917 10538
+Text Label 1917 10538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10638 1917 10638
+Text Label 1917 10638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10738 1917 10738
+Text Label 1917 10738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10838 1917 10838
+Text Label 1917 10838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 10938 1917 10938
+Text Label 1917 10938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11038 1917 11038
+Text Label 1917 11038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11138 1917 11138
+Text Label 1917 11138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11238 1917 11238
+Text Label 1917 11238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11338 1917 11338
+Text Label 1917 11338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11438 1917 11438
+Text Label 1917 11438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11538 1917 11538
+Text Label 1917 11538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11638 1917 11638
+Text Label 1917 11638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11738 1917 11738
+Text Label 1917 11738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11838 1917 11838
+Text Label 1917 11838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 11938 1917 11938
+Text Label 1917 11938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12038 1917 12038
+Text Label 1917 12038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12138 1917 12138
+Text Label 1917 12138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12238 1917 12238
+Text Label 1917 12238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12338 1917 12338
+Text Label 1917 12338 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12438 1917 12438
+Text Label 1917 12438 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12538 1917 12538
+Text Label 1917 12538 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12638 1917 12638
+Text Label 1917 12638 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12738 1917 12738
+Text Label 1917 12738 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12838 1917 12838
+Text Label 1917 12838 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 12938 1917 12938
+Text Label 1917 12938 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 13038 1917 13038
+Text Label 1917 13038 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 13138 1917 13138
+Text Label 1917 13138 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 13238 1917 13238
+Text Label 1917 13238 0    65   ~ 0
+GND
+Wire Wire Line
+	2017 13338 1917 13338
+Text Label 1917 13338 0    65   ~ 0
+GND
+Wire Wire Line
+	9650 7000 9750 7000
+Wire Wire Line
+	9650 6900 9650 7100
+Connection ~ 9650 7000
+Wire Wire Line
+	9150 3700 9850 3700
+Connection ~ 9250 3700
+Wire Wire Line
+	9150 4100 9850 4100
+Connection ~ 9250 4100
+Wire Wire Line
+	11450 3400 11450 3300
+Wire Wire Line
+	8750 3700 8750 3600
+Wire Wire Line
+	8750 3700 8950 3700
+Wire Wire Line
+	9650 6400 9650 6500
+Wire Wire Line
+	11450 4200 11450 4300
+Wire Wire Line
+	8750 4100 8750 4200
+Wire Wire Line
+	8750 4100 8950 4100
+Wire Wire Line
+	14650 6600 14650 6500
+Text GLabel 10850 7100 1    10   UnSpc ~ 0
++3V3
+Text GLabel 11250 7100 1    10   UnSpc ~ 0
++3V3
+Text GLabel 10750 7000 2    10   UnSpc ~ 0
++3V3
+Text GLabel 11250 6900 3    10   UnSpc ~ 0
++3V3
+Text GLabel 12350 6600 1    10   UnSpc ~ 0
++3V3
+Text GLabel 12350 6500 3    10   UnSpc ~ 0
++3V3
+Text GLabel 12350 7300 1    10   UnSpc ~ 0
+AREF
+Text GLabel 12350 7000 3    10   UnSpc ~ 0
+AREF
+Text GLabel 13050 7200 1    10   UnSpc ~ 0
+AREF
+Text GLabel 14650 7000 3    10   UnSpc ~ 0
+AREF_-10
+Text GLabel 14850 7200 1    10   UnSpc ~ 0
+AREF_-10
+Text GLabel 14650 7300 1    10   UnSpc ~ 0
+AREF_-10
+Text GLabel 10250 4100 1    10   UnSpc ~ 0
+GND
+Text GLabel 9850 4000 2    10   UnSpc ~ 0
+GND
+Text GLabel 9850 3900 2    10   UnSpc ~ 0
+GND
+Text GLabel 9850 3800 2    10   UnSpc ~ 0
+GND
+Text GLabel 9250 4000 0    10   UnSpc ~ 0
+GND
+Text GLabel 9250 3900 0    10   UnSpc ~ 0
+GND
+Text GLabel 9250 3800 0    10   UnSpc ~ 0
+GND
+Text GLabel 10250 7600 1    10   UnSpc ~ 0
+GND
+Text GLabel 10250 7500 3    10   UnSpc ~ 0
+GND
+Text GLabel 10850 7400 3    10   UnSpc ~ 0
+GND
+Text GLabel 10850 7600 1    10   UnSpc ~ 0
+GND
+Text GLabel 11250 7400 3    10   UnSpc ~ 0
+GND
+Text GLabel 11250 7600 1    10   UnSpc ~ 0
+GND
+Text GLabel 11450 3700 3    10   UnSpc ~ 0
+GND
+Text GLabel 11450 3900 1    10   UnSpc ~ 0
+GND
+Text GLabel 11050 3900 1    10   UnSpc ~ 0
+GND
+Text GLabel 12350 7500 3    10   UnSpc ~ 0
+GND
+Text GLabel 12350 7600 1    10   UnSpc ~ 0
+GND
+Text GLabel 13050 7500 3    10   UnSpc ~ 0
+GND
+Text GLabel 13050 7600 1    10   UnSpc ~ 0
+GND
+Text GLabel 9650 7600 1    10   UnSpc ~ 0
+GND
+Text GLabel 9650 7400 3    10   UnSpc ~ 0
+GND
+Text GLabel 14850 7500 3    10   UnSpc ~ 0
+GND
+Text GLabel 14650 7700 1    10   UnSpc ~ 0
+GND
+Text GLabel 14650 7500 3    10   UnSpc ~ 0
+GND
+Text Label 9750 7000 2    10   ~ 0
+N$49
+Text Label 9650 7100 1    10   ~ 0
+N$49
+Text Label 9650 6900 3    10   ~ 0
+N$49
+Text Label 9850 3700 0    10   ~ 0
+N$56
+Text Label 9250 3700 2    10   ~ 0
+N$56
+Text Label 9150 3700 0    10   ~ 0
+N$56
+Text Label 9850 4100 0    10   ~ 0
+N$64
+Text Label 9250 4100 2    10   ~ 0
+N$64
+Text Label 9150 4100 0    10   ~ 0
+N$64
+Text GLabel 11450 3400 1    10   UnSpc ~ 0
+VCC
+Text GLabel 11450 3300 3    10   UnSpc ~ 0
+VCC
+Text GLabel 8750 3600 3    10   UnSpc ~ 0
+VCC
+Text GLabel 8950 3700 0    10   UnSpc ~ 0
+VCC
+Text GLabel 9650 6400 3    10   UnSpc ~ 0
+VCC
+Text GLabel 9650 6500 1    10   UnSpc ~ 0
+VCC
+Text GLabel 11450 4200 3    10   UnSpc ~ 0
+VEE
+Text GLabel 11450 4300 1    10   UnSpc ~ 0
+VEE
+Text GLabel 8750 4200 1    10   UnSpc ~ 0
+VEE
+Text GLabel 8950 4100 0    10   UnSpc ~ 0
+VEE
+Text GLabel 14650 6600 1    10   UnSpc ~ 0
+VEE
+Text GLabel 14650 6500 3    10   UnSpc ~ 0
+VEE
+$EndSCHEMATC
